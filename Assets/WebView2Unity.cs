@@ -14,9 +14,6 @@ namespace WebView2Unity
         // Start is called before the first frame update
         void Start()
         {
-            WebView2Native.Create("https://github.com/umetaman");
-            StartCoroutine(delayNavigate());
-
             ButtonRef.onClick.AddListener(OnPressButton);
         }
 
